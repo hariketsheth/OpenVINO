@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=0.8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <link rel="icon" href="./assets/icons/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="static/css/style.css" />
+    <link rel="stylesheet" href="static/css/faq.css" />
+    <link rel="stylesheet" href="static/css/topics.css" />
+    <title>#OpenVINO_Intel</title>
+  </head>
+
+  <body class="body">
+    <div class="preloader">
+      <div class="word">#OpenVino_Intel</div>
+      <div class="overlay"></div>
+    </div>
+    <nav id="nav_bar">
+      <div class="tcr_logo">
+        <img src="./assets/media/logo.png" alt="logo" />
+      </div>
+      <div class="nav_links">
+        <a href="#landing">Home</a>
+        <a href="#about_us">About Us</a>
+        <a href="#topics">Topics</a>
+        <a href="#speakers">Speakers</a>
+        <a href="#join_us">Register</a>
+      </div>
+    </nav>
+    <nav id="nav_bar_mobile">
+      <div class="tcr_logo">
+        <img src="./assets/media/logo.png" alt="logo" />
+      </div>
+      <button
+        aria-label="Menu"
+        id="hamburger"
+        class="hamburger"
+        onclick="toggleMenubar(this)"
+      >
+        <div class="ham-box">
+          <div class="ham-box-inner"></div>
+        </div>
+      </button>
+    </nav>
+    <aside
+      aria-hidden="true"
+      tabindex="-1"
+      class="menu_StyledSidebar menubar"
+      id="aside"
+    >
+      <nav>
+        <ul>
+          <li><a href="#landing" class="about_high">Home</a></li>
+          <li><a href="#about_us">About Us</a></li>
+          <li><a href="#topics">Topics</a></li>
+          <li><a href="#speakers">Speakers</a></li>
+          <li><a href="#join_us">Register</a></li>
+        </ul>
+ 
+      </nav>
+    </aside>
+    <div id="content">
+      <div id="landing_wrap">
+        <section id="landing">
+          <div class="left">
+
+            <div class="title4" id="OpenVINOIntel">
+              <span>#</span>
+              <span>O</span>
+              <span>p</span>
+              <span>e</span>
+              <span>n</span>
+              <span>V</span>
+              <span>I</span>
+              <span>N</span>
+              <span>O</span>
+              <span>_</span>
+              <span>I</span>
+              <span>n</span>
+              <span>t</span>
+              <span>e</span>
+              <span>l</span>
+          </div>
+            <h3 class="tagline">"need-to-insert-tagline"</h3>
+            <div class="calendar">
+              <div class="top">
+                <span>November 2021</span>
+                <div>
+                  <span class="material-icons-outlined"> chevron_left </span>
+                  <span class="material-icons-outlined"> chevron_right </span>
+                </div>
+              </div>
+              <div class="middle">
+                <span>
+                  <span>12</span>
+                  <span>13</span>
+                  <span>14</span>
+                  <span>15</span>
+                  <span>16</span>
+                </span>
+                <span>17</span>
+              </div>
+              <div class="bottom">Prepare to be amazed</div>
+            </div>
+            <!--<div class="buttons">
+              <div
+                class="apply-button"
+                data-hackathon-slug="learntcr"
+                data-button-theme="light"
+                style="height: 44px; width: 312px"
+              ></div>
+              <a href="https://discord.gg/DJzfRCSqwe">
+                <div class="discord_button">
+                  <img
+                    src="./assets/media/discord_inner_logo.png"
+                    alt="discord"
+                  />
+                </div>
+              </a>
+              <a href="https://discord.gg/DJzfRCSqwe">
+                <div class="discord_button_mobile">
+                  <img
+                    src="./assets/media/discord_mobile_logo.png"
+                    alt="discord"
+                  />
+                </div>
+              </a>
+            </div> -->
+          </div>
+          <div class="right landing_vector">
+            <img src="./assets/media/banner.png" alt="#LearnWithTCR" />
+          </div>
+        </section>
+        <!--<section id="ticker">
+          <div class="ticker_wrap">
+            <img
+              src="./assets/Sponsors/1pass.png"
+              alt="1pass"
+              style="filter: invert()"
+            />
+            <img
+              class="jetbrains"
+              src="./assets/Sponsors/jetbrains.png"
+              alt="jetbrains"
+            />
+            <img
+              src="./assets/Sponsors/airmeet.svg"
+              alt="airmeet"
+              class="airmeet"
+            />
+            <img src="./assets/Sponsors/axure.png" alt="axure" />
+            <img src="./assets/Sponsors/balsamiq.svg" alt="1passbalsamiq" />
+            <img
+              src="./assets/Sponsors/bugsee.svg"
+              alt="bugsee"
+              style="height: 50%"
+            />
+            <img src="./assets/Sponsors/cb.png" alt="cb" />
+            <img src="./assets/Sponsors/devfolio.svg" alt="devfolio" />
+            <img src="./assets/Sponsors/codechef.svg" alt="codechef" />
+            <img src="./assets/Sponsors/codingNinjas.svg" alt="ninja" />
+            <img src="./assets/Sponsors/streamyard.svg" alt="streamyard" />
+          </div>
+        </section>-->
+      </div>
+      <section id="about_us">
+        <h1>About Us</h1>
+        <p id="aboutus">
+          <span class="about_high abouttitle">#LearnWithTCR</span> is the workshop conducted by the official Robotics Team
+          of <span>VIT Chennai</span> - Technocrats Robotics , where
+          enthusiasts get an opportunity to learn and brush up their concepts on exclusive 
+          topics in Mechanical, CSE and Electrical Department from absolute Beginner Level.
+          <span class="about_high">Learn something exciting.</span> Expect more
+          than <span class="about_high">just a 2 Hour session</span> of inspiring panel
+          workshops and
+          <span class="about_high">networking opportunities.</span>
+        </p>
+      </section>
+      <section id="topics">
+      <div >
+     <h1>Topics</h1>
+
+      <div class="container">
+        <div class="card">
+          <div class="Box">
+            <img src='assets/media/mech.png' alt="TrackCover" />
+          </div>
+          <div class="details">
+            <h3>Mechanical </h3>
+            <h3>Department</h3>
+            <br />
+            <p>Workshop Topics - Add here</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="Box">
+            <img src='assets/media/cse.png' alt="TrackCover" />
+          </div>
+          <div class="details">
+            <h3>CSE </h3>
+            <h3>Department</h3>
+            <br />
+            <p>Workshop Topics - Add here</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="Box">
+            <img style="object-fit: cover;" src='assets/media/electric.jpg' alt="TrackCover" />
+          </div>
+          <div class="details">
+            <h3>Electric</h3>
+            <h3>Department</h3>
+            <br />
+            <p>Workshop Topics - Add here</p>
+          </div>
+        </div>
+        <br />
+       
+      </div>
+    </div>
+      </section>
+      <section id="speakers">
+        <h1 id="eventcr_head">Speakers</h1>
+        <div id="speakers_wrapper">
+          <div id="eventcr">
+            <div class="img">
+              <img src="./assets/speakers/karan.jfif" />
+            </div>
+            <div>
+              <!-- <h1>Karan Yuvraj Singh</h1> -->
+              <h1>To be unveiled soon</h1>
+              <p>...</p>
+              <!-- <p>Captain | Technocrats Robotics</p> -->
+              <div class="eventcr_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img">
+              <img src="./assets/speakers/soumya.jfif" />
+            </div>
+            <div>
+              <!-- <h1>Soumya</h1> -->
+              <h1>To be unveiled soon</h1>
+              <p>...</p>
+              <!-- <p>Mechanical Department Head | Technocrats Robotics</p> -->
+              <div class="eventcr_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img">
+              <img src="./assets/speakers/prabhat.jfif" />
+            </div>
+            <div>
+              <!-- <h1>Prabhat Singh</h1> -->
+              <h1>To be unveiled soon</h1>
+              <p>...</p>
+              <!-- <p>Electrical Department Head | Technocrats Robotics</p> -->
+              <div class="eventcr_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="img">
+              <img src="./assets/speakers/ashiq.jfif" />
+            </div>
+            <div>
+              <!-- <h1>Ashiq Khader</h1> -->
+              <h1>To be unveiled soon</h1>
+              <p>...</p>
+              <!-- <p>CSE Department Head | Technocrats Robotics</p> -->
+              <div class="eventcr_social_icons">
+                <i class="fab fa-linkedin"></i>
+                <i class="fab fa-github"></i>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </section>      
+    </div>
+    <div class="faq" id="faq">
+      <div class="cross"><i class="fa-solid fa-xmark" id="close"></i></div>
+      <div class="description">
+        <h1 class="description-header">Have a question?</h1>
+        <br />
+        <div class="description-content">
+          Below are the most frequently asked questions that our bot TechRoboxi can
+          help you with. If he can't help you... don't worry we've got your
+          back. Just mail us at
+          <a
+            style="color: white"
+            href="mailto:help.learnwithtcr@gmail.com"
+            target="_blank"
+            >help.learnwithtcr@gmail.com</a
+          >
+          or reach out to us via our socials :)
+        </div>
+      </div>
+      <div class="faq-container">
+        <div class="faq-left"></div>
+        <div class="faq-right">
+          <div>
+            <div class="right-header">Want to reach out to us?</div>
+            <div class="right-description">
+              Hop on folks, we'er eager to help you out. <br /><br />
+              <div class="social_icons">
+                <a href="https://www.instagram.com/technocratsrobotics/" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/company/technocrats-robotics-vit"
+                  target="_blank"
+                  ><i class="fab fa-linkedin"></i
+                ></a>
+                <a href="https://technocratsrobotics.in/" target="_blank"
+                  ><i class="fab fa-first-order"></i
+                ></a>
+                <a href="https://github.com/technocrats-robotics" target="_blank"
+                  ><i class="fab fa-github"></i
+                ></a>
+                <a href="https://twitter.com/technocratsr" target="_blank"
+                  ><i class="fab fa-twitter"></i
+                ></a>
+                <p>For more updates,<br />follow us on all social media.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq-main-container">
+            <img src="assets/media/FAQ_main.png" class="faq-main" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <section id="join_us">
+      <div class="img_vector">
+        <img src="./assets/media/join.png" alt="join" />
+      </div>
+      <div class="faq-section">
+        <h1>
+          <span class="about_high">We are here to help you out!</span>
+        </h1>
+        <p>
+          If you have any doubts, we have got you covered! Let's
+          make it better and an informative workshop for all.
+        </p>
+        <div class="img">
+          <img src="./assets/media/faq.png" alt="gift" />
+        </div>
+        <div
+          class="btn"
+          id="faq-button"
+          >FAQ Section</div
+        >
+      </div>
+      <div class="register">
+        <h1 class="about_high">Ready to join us for this Workshop?</h1>
+        <p>
+          Register now and get ready for listening to our inspiring panel
+          members, learning and getting quality insights!
+        </p>
+        <div class="img">
+          <img src="./assets/media/register.png" alt="gift" />
+        </div>
+        <a style='text-decoration: none;' href='register.html'>
+          <div class="btn">
+          Register Now
+        </div></a>
+      </div>
+    </section>
+    <section class="bg-img pt70 pb70" style="background-image: url(assets/media/counter.png)">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <h4 class="mb30 text-center color-light">
+              Final showdown begins in
+            </h4>
+            <!--<div>00 <span>Days</span></div>  <div>00<span>Hours</span></div> <div>00<span>Minutes</span></div> <div>00<span>Seconds</span></div> -->
+            <span id="countdown"><div>00 <span>Days</span></div>  <div>00<span>Hours</span></div> <div>00<span>Minutes</span></div> <div>00<span>Seconds</span></div></span></div></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="static/js/jquery.countdown.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.6.1/jquery.lettering.min.js"></script>
+    <script src="static/js/scroll_to_id.js"></script>
+    <script src="static/js/preloader.js"></script>
+    <script src="static/js/index.js"></script>
+    <script src="static/js/script.js"></script>
+    <script src="static/js/tilt.js"></script>
+    <script>
+      var loader = document.querySelector(".preloader");
+      var body = document.querySelector("body");
+      window.addEventListener("load", () => {
+        setTimeout(function(){
+          $(loader).fadeOut(3000);
+        },2500);
+      });
+    </script>
+    <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+  </body>
+</html>
