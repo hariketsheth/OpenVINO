@@ -43,7 +43,7 @@ a {
   color: inherit;
 }
 
-#LearnwithTCR span {
+#OpenVINOIntel span {
   display: table-cell;
   margin: 0;
   padding: 0;
@@ -58,57 +58,70 @@ a {
   top: 350px;
 }
 
-#LearnwithTCR span:nth-child(1) {
+#OpenVINOIntel span:nth-child(1) {
   animation-delay: 0s; 
 }
 
-#LearnwithTCR span:nth-child(2) {
+#OpenVINOIntel span:nth-child(2) {
   animation-delay: 0.2s;
 }
 
-#LearnwithTCR span:nth-child(3) {
+#OpenVINOIntel span:nth-child(3) {
   animation-delay: 0.4s;
 }
 
-#LearnwithTCR span:nth-child(4) {
+#OpenVINOIntel span:nth-child(4) {
   animation-delay: 0.6s;
 }
 
-#LearnwithTCR span:nth-child(5) {
+#OpenVINOIntel span:nth-child(5) {
   animation-delay: 0.8s;
 }
 
-#LearnwithTCR span:nth-child(6) {
+#OpenVINOIntel span:nth-child(6) {
   animation-delay: 1s;
 }
 
-#LearnwithTCR span:nth-child(7) {
+#OpenVINOIntel span:nth-child(7) {
   animation-delay: 1.2s;
 }
 
-#LearnwithTCR span:nth-child(8) {
-  animation-delay: 1s;
+#OpenVINOIntel span:nth-child(8) {
+  animation-delay: 1.4s;
 }
 
-#LearnwithTCR span:nth-child(9) {
+#OpenVINOIntel span:nth-child(9) {
+  animation-delay: 1.6s;
+}
+
+#OpenVINOIntel span:nth-child(10) {
+  animation-delay: 1.4s;
+}
+
+#OpenVINOIntel span:nth-child(11) {
+  animation-delay: 1.2s;
+}
+
+#OpenVINOIntel span:nth-child(12) {
+  animation-delay: 1.0s;
+}
+
+#OpenVINOIntel span:nth-child(13) {
   animation-delay: 0.8s;
 }
-
-#LearnwithTCR span:nth-child(10) {
+#OpenVINOIntel span:nth-child(14) {
   animation-delay: 0.6s;
 }
-
-#LearnwithTCR span:nth-child(11) {
+#OpenVINOIntel span:nth-child(15) {
   animation-delay: 0.4s;
 }
-
-#LearnwithTCR span:nth-child(12) {
+#OpenVINOIntel span:nth-child(16) {
   animation-delay: 0.2s;
 }
-
-#LearnwithTCR span:nth-child(13) {
+#OpenVINOIntel span:nth-child(17) {
   animation-delay: 0s;
 }
+
 
 @keyframes learn_tcr {
 
