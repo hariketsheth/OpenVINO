@@ -1,0 +1,1374 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #5f676e;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #121217;
+  height: 100px;
+}
+html,
+body {
+  overflow-x: hidden;
+  user-select: none;
+}
+body {
+  background-color: #08080a;
+  color: #fff;
+  font-family: sans-serif;
+  margin: 0;
+  overflow: hidden;
+}
+body.blur {
+  overflow: hidden;
+  height: 100vh;
+}
+body.blur #content > * {
+  filter: blur(5px) brightness(0.7);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+body.blur #nav_bar_mobile .tcr_logo {
+  filter: blur(2px) brightness(0.7);
+  transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#OpenVINOIntel span {
+  display: table-cell;
+  margin: 0;
+  padding: 0;
+  animation: learn_tcr 2.0s linear infinite;
+  font-size: 3.7rem;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  box-sizing: border-box;
+  width: fit-content;
+  text-align: center;
+  top: 350px;
+}
+
+#OpenVINOIntel span:nth-child(1) {
+  animation-delay: 0s; 
+}
+
+#OpenVINOIntel span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+#OpenVINOIntel span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+#OpenVINOIntel span:nth-child(4) {
+  animation-delay: 0.6s;
+}
+
+#OpenVINOIntel span:nth-child(5) {
+  animation-delay: 0.8s;
+}
+
+#OpenVINOIntel span:nth-child(6) {
+  animation-delay: 1s;
+}
+
+#OpenVINOIntel span:nth-child(7) {
+  animation-delay: 1.2s;
+}
+
+#OpenVINOIntel span:nth-child(8) {
+  animation-delay: 1.4s;
+}
+
+#OpenVINOIntel span:nth-child(9) {
+  animation-delay: 1.6s;
+}
+
+#OpenVINOIntel span:nth-child(10) {
+  animation-delay: 1.4s;
+}
+
+#OpenVINOIntel span:nth-child(11) {
+  animation-delay: 1.2s;
+}
+
+#OpenVINOIntel span:nth-child(12) {
+  animation-delay: 1.0s;
+}
+
+#OpenVINOIntel span:nth-child(13) {
+  animation-delay: 0.8s;
+}
+#OpenVINOIntel span:nth-child(14) {
+  animation-delay: 0.6s;
+}
+#OpenVINOIntel span:nth-child(15) {
+  animation-delay: 0.4s;
+}
+#OpenVINOIntel span:nth-child(16) {
+  animation-delay: 0.2s;
+}
+#OpenVINOIntel span:nth-child(17) {
+  animation-delay: 0s;
+}
+
+
+@keyframes learn_tcr {
+
+  0%,
+  100% {
+      color: #fff;
+      filter: blur(1px);
+      text-shadow: 0 0 10px #00b3ff,
+          0 0 20px #00b3ff,
+          0 0 40px #00b3ff,
+          0 0 80px #00b3ff,
+          0 0 120px #00b3ff,
+          0 0 200px #00b3ff,
+          0 0 300px #00b3ff,
+          0 0 400px #00b3ff,
+          0 0 500px #00b3ff,
+          0 0 600px #00b3ff,
+          0 0 700px #00b3ff;
+  }
+
+  5%,
+  95% {
+      color: white;
+      filter: blur(0px);
+      text-shadow: none;
+  }
+}
+
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+section {
+  padding: 0px 120px 0 120px;
+}
+p {
+  color: #757575;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+
+/* preloader style starts */
+
+.preloader {
+  background: radial-gradient(#222922, #000500);
+  height: 100%;
+  width: 100%;
+  z-index: 100000;
+  position: fixed;
+  text-align: center;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.word {
+  bottom: 0;
+  color: #fff;
+  font-size: 2.5em;
+  height: 2.5em;
+  left: 0;
+  line-height: 2.5em;
+  margin: auto;
+  right: 0;
+  position: absolute;
+  text-shadow: 0 0 10px rgba(50, 255, 50, 0.5), 0 0 5px rgba(100, 255, 100, 0.5);
+  top: 0;
+}
+
+.word span {
+  display: inline-block;
+  transform: translateX(100%) scale(0.9);
+  transition: transform 500ms;
+}
+
+.word .done {
+  color: #6f6;
+  transform: translateX(0) scale(1);
+}
+
+.overlay {
+  background-image: linear-gradient(transparent 0%, rgba(10, 16, 10, 0.5) 50%);
+  background-size: 1000px 2px;
+  bottom: 0;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* background-color: red; */
+}
+
+/* preloader style ends */
+
+/* -------------------------------- Navbar Section ------------------------------------ */
+#nav_bar {
+  display: flex;
+  height: 15vh;
+  justify-content: space-between;
+  padding: 10px 100px;
+  padding-right: 40;
+  background-color: #000000;
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23555555' stroke-width='0.7' stroke-opacity='0.2'%3E%3Crect x='-40' y='40' width='75' height='75'/%3E%3Crect x='-35' y='45' width='65' height='65'/%3E%3Crect x='-30' y='50' width='55' height='55'/%3E%3Crect x='-25' y='55' width='45' height='45'/%3E%3Crect x='-20' y='60' width='35' height='35'/%3E%3Crect x='-15' y='65' width='25' height='25'/%3E%3Crect x='-10' y='70' width='15' height='15'/%3E%3Crect x='-5' y='75' width='5' height='5'/%3E%3Crect width='35' height='35'/%3E%3Crect x='5' y='5' width='25' height='25'/%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='15' y='15' width='5' height='5'/%3E%3Crect x='40' width='75' height='75'/%3E%3Crect x='45' y='5' width='65' height='65'/%3E%3Crect x='50' y='10' width='55' height='55'/%3E%3Crect x='55' y='15' width='45' height='45'/%3E%3Crect x='60' y='20' width='35' height='35'/%3E%3Crect x='65' y='25' width='25' height='25'/%3E%3Crect x='70' y='30' width='15' height='15'/%3E%3Crect x='75' y='35' width='5' height='5'/%3E%3Crect x='40' y='80' width='35' height='35'/%3E%3Crect x='45' y='85' width='25' height='25'/%3E%3Crect x='50' y='90' width='15' height='15'/%3E%3Crect x='55' y='95' width='5' height='5'/%3E%3Crect x='120' y='-40' width='75' height='75'/%3E%3Crect x='125' y='-35' width='65' height='65'/%3E%3Crect x='130' y='-30' width='55' height='55'/%3E%3Crect x='135' y='-25' width='45' height='45'/%3E%3Crect x='140' y='-20' width='35' height='35'/%3E%3Crect x='145' y='-15' width='25' height='25'/%3E%3Crect x='150' y='-10' width='15' height='15'/%3E%3Crect x='155' y='-5' width='5' height='5'/%3E%3Crect x='120' y='40' width='35' height='35'/%3E%3Crect x='125' y='45' width='25' height='25'/%3E%3Crect x='130' y='50' width='15' height='15'/%3E%3Crect x='135' y='55' width='5' height='5'/%3E%3Crect y='120' width='75' height='75'/%3E%3Crect x='5' y='125' width='65' height='65'/%3E%3Crect x='10' y='130' width='55' height='55'/%3E%3Crect x='15' y='135' width='45' height='45'/%3E%3Crect x='20' y='140' width='35' height='35'/%3E%3Crect x='25' y='145' width='25' height='25'/%3E%3Crect x='30' y='150' width='15' height='15'/%3E%3Crect x='35' y='155' width='5' height='5'/%3E%3Crect x='200' y='120' width='75' height='75'/%3E%3Crect x='40' y='200' width='75' height='75'/%3E%3Crect x='80' y='80' width='75' height='75'/%3E%3Crect x='85' y='85' width='65' height='65'/%3E%3Crect x='90' y='90' width='55' height='55'/%3E%3Crect x='95' y='95' width='45' height='45'/%3E%3Crect x='100' y='100' width='35' height='35'/%3E%3Crect x='105' y='105' width='25' height='25'/%3E%3Crect x='110' y='110' width='15' height='15'/%3E%3Crect x='115' y='115' width='5' height='5'/%3E%3Crect x='80' y='160' width='35' height='35'/%3E%3Crect x='85' y='165' width='25' height='25'/%3E%3Crect x='90' y='170' width='15' height='15'/%3E%3Crect x='95' y='175' width='5' height='5'/%3E%3Crect x='120' y='160' width='75' height='75'/%3E%3Crect x='125' y='165' width='65' height='65'/%3E%3Crect x='130' y='170' width='55' height='55'/%3E%3Crect x='135' y='175' width='45' height='45'/%3E%3Crect x='140' y='180' width='35' height='35'/%3E%3Crect x='145' y='185' width='25' height='25'/%3E%3Crect x='150' y='190' width='15' height='15'/%3E%3Crect x='155' y='195' width='5' height='5'/%3E%3Crect x='160' y='40' width='75' height='75'/%3E%3Crect x='165' y='45' width='65' height='65'/%3E%3Crect x='170' y='50' width='55' height='55'/%3E%3Crect x='175' y='55' width='45' height='45'/%3E%3Crect x='180' y='60' width='35' height='35'/%3E%3Crect x='185' y='65' width='25' height='25'/%3E%3Crect x='190' y='70' width='15' height='15'/%3E%3Crect x='195' y='75' width='5' height='5'/%3E%3Crect x='160' y='120' width='35' height='35'/%3E%3Crect x='165' y='125' width='25' height='25'/%3E%3Crect x='170' y='130' width='15' height='15'/%3E%3Crect x='175' y='135' width='5' height='5'/%3E%3Crect x='200' y='200' width='35' height='35'/%3E%3Crect x='200' width='35' height='35'/%3E%3Crect y='200' width='35' height='35'/%3E%3C/g%3E%3C/svg%3E"); */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23656565' stroke-width='1' stroke-opacity='0.27'%3E%3Crect x='-40' y='40' width='75' height='75'/%3E%3Crect x='-35' y='45' width='65' height='65'/%3E%3Crect x='-30' y='50' width='55' height='55'/%3E%3Crect x='-25' y='55' width='45' height='45'/%3E%3Crect x='-20' y='60' width='35' height='35'/%3E%3Crect x='-15' y='65' width='25' height='25'/%3E%3Crect x='-10' y='70' width='15' height='15'/%3E%3Crect x='-5' y='75' width='5' height='5'/%3E%3Crect width='35' height='35'/%3E%3Crect x='5' y='5' width='25' height='25'/%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='15' y='15' width='5' height='5'/%3E%3Crect x='40' width='75' height='75'/%3E%3Crect x='45' y='5' width='65' height='65'/%3E%3Crect x='50' y='10' width='55' height='55'/%3E%3Crect x='55' y='15' width='45' height='45'/%3E%3Crect x='60' y='20' width='35' height='35'/%3E%3Crect x='65' y='25' width='25' height='25'/%3E%3Crect x='70' y='30' width='15' height='15'/%3E%3Crect x='75' y='35' width='5' height='5'/%3E%3Crect x='40' y='80' width='35' height='35'/%3E%3Crect x='45' y='85' width='25' height='25'/%3E%3Crect x='50' y='90' width='15' height='15'/%3E%3Crect x='55' y='95' width='5' height='5'/%3E%3Crect x='120' y='-40' width='75' height='75'/%3E%3Crect x='125' y='-35' width='65' height='65'/%3E%3Crect x='130' y='-30' width='55' height='55'/%3E%3Crect x='135' y='-25' width='45' height='45'/%3E%3Crect x='140' y='-20' width='35' height='35'/%3E%3Crect x='145' y='-15' width='25' height='25'/%3E%3Crect x='150' y='-10' width='15' height='15'/%3E%3Crect x='155' y='-5' width='5' height='5'/%3E%3Crect x='120' y='40' width='35' height='35'/%3E%3Crect x='125' y='45' width='25' height='25'/%3E%3Crect x='130' y='50' width='15' height='15'/%3E%3Crect x='135' y='55' width='5' height='5'/%3E%3Crect y='120' width='75' height='75'/%3E%3Crect x='5' y='125' width='65' height='65'/%3E%3Crect x='10' y='130' width='55' height='55'/%3E%3Crect x='15' y='135' width='45' height='45'/%3E%3Crect x='20' y='140' width='35' height='35'/%3E%3Crect x='25' y='145' width='25' height='25'/%3E%3Crect x='30' y='150' width='15' height='15'/%3E%3Crect x='35' y='155' width='5' height='5'/%3E%3Crect x='200' y='120' width='75' height='75'/%3E%3Crect x='40' y='200' width='75' height='75'/%3E%3Crect x='80' y='80' width='75' height='75'/%3E%3Crect x='85' y='85' width='65' height='65'/%3E%3Crect x='90' y='90' width='55' height='55'/%3E%3Crect x='95' y='95' width='45' height='45'/%3E%3Crect x='100' y='100' width='35' height='35'/%3E%3Crect x='105' y='105' width='25' height='25'/%3E%3Crect x='110' y='110' width='15' height='15'/%3E%3Crect x='115' y='115' width='5' height='5'/%3E%3Crect x='80' y='160' width='35' height='35'/%3E%3Crect x='85' y='165' width='25' height='25'/%3E%3Crect x='90' y='170' width='15' height='15'/%3E%3Crect x='95' y='175' width='5' height='5'/%3E%3Crect x='120' y='160' width='75' height='75'/%3E%3Crect x='125' y='165' width='65' height='65'/%3E%3Crect x='130' y='170' width='55' height='55'/%3E%3Crect x='135' y='175' width='45' height='45'/%3E%3Crect x='140' y='180' width='35' height='35'/%3E%3Crect x='145' y='185' width='25' height='25'/%3E%3Crect x='150' y='190' width='15' height='15'/%3E%3Crect x='155' y='195' width='5' height='5'/%3E%3Crect x='160' y='40' width='75' height='75'/%3E%3Crect x='165' y='45' width='65' height='65'/%3E%3Crect x='170' y='50' width='55' height='55'/%3E%3Crect x='175' y='55' width='45' height='45'/%3E%3Crect x='180' y='60' width='35' height='35'/%3E%3Crect x='185' y='65' width='25' height='25'/%3E%3Crect x='190' y='70' width='15' height='15'/%3E%3Crect x='195' y='75' width='5' height='5'/%3E%3Crect x='160' y='120' width='35' height='35'/%3E%3Crect x='165' y='125' width='25' height='25'/%3E%3Crect x='170' y='130' width='15' height='15'/%3E%3Crect x='175' y='135' width='5' height='5'/%3E%3Crect x='200' y='200' width='35' height='35'/%3E%3Crect x='200' width='35' height='35'/%3E%3Crect y='200' width='35' height='35'/%3E%3C/g%3E%3C/svg%3E");
+}
+#nav_bar .tcr_logo {
+  width: 8%;
+  display: flex;
+}
+#nav_bar .nav_links {
+  width: 50%;
+  text-align: center;
+  padding-top: 20px;
+}
+#nav_bar .nav_links a {
+  font-size: 1.3rem;
+  /* color: #6d6d6d; */
+  color: white;
+  margin-left: 20px;
+  transition: all 0.5s ease;
+}
+
+#nav_bar .nav_links a:nth-child(1) {
+  color: #7d77c0;
+}
+#nav_bar .nav_links a:hover {
+  color: #302b63;
+}
+#nav_bar .gdsc_logo {
+  width: 20%;
+  margin-top: 10px;
+}
+/* ------------ Mobile Navbar -------- */
+#nav_bar_mobile {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23656565' stroke-width='1' stroke-opacity='0.27'%3E%3Crect x='-40' y='40' width='75' height='75'/%3E%3Crect x='-35' y='45' width='65' height='65'/%3E%3Crect x='-30' y='50' width='55' height='55'/%3E%3Crect x='-25' y='55' width='45' height='45'/%3E%3Crect x='-20' y='60' width='35' height='35'/%3E%3Crect x='-15' y='65' width='25' height='25'/%3E%3Crect x='-10' y='70' width='15' height='15'/%3E%3Crect x='-5' y='75' width='5' height='5'/%3E%3Crect width='35' height='35'/%3E%3Crect x='5' y='5' width='25' height='25'/%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='15' y='15' width='5' height='5'/%3E%3Crect x='40' width='75' height='75'/%3E%3Crect x='45' y='5' width='65' height='65'/%3E%3Crect x='50' y='10' width='55' height='55'/%3E%3Crect x='55' y='15' width='45' height='45'/%3E%3Crect x='60' y='20' width='35' height='35'/%3E%3Crect x='65' y='25' width='25' height='25'/%3E%3Crect x='70' y='30' width='15' height='15'/%3E%3Crect x='75' y='35' width='5' height='5'/%3E%3Crect x='40' y='80' width='35' height='35'/%3E%3Crect x='45' y='85' width='25' height='25'/%3E%3Crect x='50' y='90' width='15' height='15'/%3E%3Crect x='55' y='95' width='5' height='5'/%3E%3Crect x='120' y='-40' width='75' height='75'/%3E%3Crect x='125' y='-35' width='65' height='65'/%3E%3Crect x='130' y='-30' width='55' height='55'/%3E%3Crect x='135' y='-25' width='45' height='45'/%3E%3Crect x='140' y='-20' width='35' height='35'/%3E%3Crect x='145' y='-15' width='25' height='25'/%3E%3Crect x='150' y='-10' width='15' height='15'/%3E%3Crect x='155' y='-5' width='5' height='5'/%3E%3Crect x='120' y='40' width='35' height='35'/%3E%3Crect x='125' y='45' width='25' height='25'/%3E%3Crect x='130' y='50' width='15' height='15'/%3E%3Crect x='135' y='55' width='5' height='5'/%3E%3Crect y='120' width='75' height='75'/%3E%3Crect x='5' y='125' width='65' height='65'/%3E%3Crect x='10' y='130' width='55' height='55'/%3E%3Crect x='15' y='135' width='45' height='45'/%3E%3Crect x='20' y='140' width='35' height='35'/%3E%3Crect x='25' y='145' width='25' height='25'/%3E%3Crect x='30' y='150' width='15' height='15'/%3E%3Crect x='35' y='155' width='5' height='5'/%3E%3Crect x='200' y='120' width='75' height='75'/%3E%3Crect x='40' y='200' width='75' height='75'/%3E%3Crect x='80' y='80' width='75' height='75'/%3E%3Crect x='85' y='85' width='65' height='65'/%3E%3Crect x='90' y='90' width='55' height='55'/%3E%3Crect x='95' y='95' width='45' height='45'/%3E%3Crect x='100' y='100' width='35' height='35'/%3E%3Crect x='105' y='105' width='25' height='25'/%3E%3Crect x='110' y='110' width='15' height='15'/%3E%3Crect x='115' y='115' width='5' height='5'/%3E%3Crect x='80' y='160' width='35' height='35'/%3E%3Crect x='85' y='165' width='25' height='25'/%3E%3Crect x='90' y='170' width='15' height='15'/%3E%3Crect x='95' y='175' width='5' height='5'/%3E%3Crect x='120' y='160' width='75' height='75'/%3E%3Crect x='125' y='165' width='65' height='65'/%3E%3Crect x='130' y='170' width='55' height='55'/%3E%3Crect x='135' y='175' width='45' height='45'/%3E%3Crect x='140' y='180' width='35' height='35'/%3E%3Crect x='145' y='185' width='25' height='25'/%3E%3Crect x='150' y='190' width='15' height='15'/%3E%3Crect x='155' y='195' width='5' height='5'/%3E%3Crect x='160' y='40' width='75' height='75'/%3E%3Crect x='165' y='45' width='65' height='65'/%3E%3Crect x='170' y='50' width='55' height='55'/%3E%3Crect x='175' y='55' width='45' height='45'/%3E%3Crect x='180' y='60' width='35' height='35'/%3E%3Crect x='185' y='65' width='25' height='25'/%3E%3Crect x='190' y='70' width='15' height='15'/%3E%3Crect x='195' y='75' width='5' height='5'/%3E%3Crect x='160' y='120' width='35' height='35'/%3E%3Crect x='165' y='125' width='25' height='25'/%3E%3Crect x='170' y='130' width='15' height='15'/%3E%3Crect x='175' y='135' width='5' height='5'/%3E%3Crect x='200' y='200' width='35' height='35'/%3E%3Crect x='200' width='35' height='35'/%3E%3Crect y='200' width='35' height='35'/%3E%3C/g%3E%3C/svg%3E");
+  display: none;
+  height: 15vh;
+  justify-content: space-between;
+  padding: 10px 5px;
+  width: 100%;
+}
+aside.menubar {
+  display: none;
+}
+#nav_bar_mobile .tcr_logo {
+  width: 25%;
+  display: flex;
+}
+.hamburger {
+  display: none;
+  margin-top: -10px;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  margin-right: -15px;
+  padding: 15px;
+  border: 0px;
+  background-color: transparent;
+  color: inherit;
+  text-transform: none;
+  transition-timing-function: linear;
+  transition-duration: 0.15s;
+  transition-property: opacity, filter;
+}
+.hamburger .ham-box {
+  display: inline-block;
+  position: relative;
+  width: 30px;
+  height: 24px;
+}
+.hamburger .ham-box-inner {
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  width: 30px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #528ce2;
+  transition: transform 0.22s cubic-bezier(0.55, 0.055, 0.675, 0.19) 0s;
+  transform: rotate(0deg);
+}
+.hamburger .ham-box-inner::before,
+.hamburger .ham-box-inner::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: auto;
+  right: 0px;
+  width: 30px;
+  height: 2px;
+  border-radius: 4px;
+  background-color: #528ce2;
+  transition-timing-function: ease;
+  transition-duration: 0.15s;
+  transition-property: transform;
+}
+.hamburger .ham-box-inner::before {
+  width: 120%;
+  top: -10px;
+  opacity: 1;
+  transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+}
+.hamburger .ham-box-inner::after {
+  width: 80%;
+  top: 10px;
+  opacity: 1;
+  transition: top 0.1s ease-in 0.25s, opacity 0.1s ease-in;
+}
+
+/* ------------------------------ Landing Section --------------- */
+#landing_wrap {
+  position: relative;
+  min-height: 85vh;
+}
+#landing {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23656565' stroke-width='1' stroke-opacity='0.27'%3E%3Crect x='-40' y='40' width='75' height='75'/%3E%3Crect x='-35' y='45' width='65' height='65'/%3E%3Crect x='-30' y='50' width='55' height='55'/%3E%3Crect x='-25' y='55' width='45' height='45'/%3E%3Crect x='-20' y='60' width='35' height='35'/%3E%3Crect x='-15' y='65' width='25' height='25'/%3E%3Crect x='-10' y='70' width='15' height='15'/%3E%3Crect x='-5' y='75' width='5' height='5'/%3E%3Crect width='35' height='35'/%3E%3Crect x='5' y='5' width='25' height='25'/%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='15' y='15' width='5' height='5'/%3E%3Crect x='40' width='75' height='75'/%3E%3Crect x='45' y='5' width='65' height='65'/%3E%3Crect x='50' y='10' width='55' height='55'/%3E%3Crect x='55' y='15' width='45' height='45'/%3E%3Crect x='60' y='20' width='35' height='35'/%3E%3Crect x='65' y='25' width='25' height='25'/%3E%3Crect x='70' y='30' width='15' height='15'/%3E%3Crect x='75' y='35' width='5' height='5'/%3E%3Crect x='40' y='80' width='35' height='35'/%3E%3Crect x='45' y='85' width='25' height='25'/%3E%3Crect x='50' y='90' width='15' height='15'/%3E%3Crect x='55' y='95' width='5' height='5'/%3E%3Crect x='120' y='-40' width='75' height='75'/%3E%3Crect x='125' y='-35' width='65' height='65'/%3E%3Crect x='130' y='-30' width='55' height='55'/%3E%3Crect x='135' y='-25' width='45' height='45'/%3E%3Crect x='140' y='-20' width='35' height='35'/%3E%3Crect x='145' y='-15' width='25' height='25'/%3E%3Crect x='150' y='-10' width='15' height='15'/%3E%3Crect x='155' y='-5' width='5' height='5'/%3E%3Crect x='120' y='40' width='35' height='35'/%3E%3Crect x='125' y='45' width='25' height='25'/%3E%3Crect x='130' y='50' width='15' height='15'/%3E%3Crect x='135' y='55' width='5' height='5'/%3E%3Crect y='120' width='75' height='75'/%3E%3Crect x='5' y='125' width='65' height='65'/%3E%3Crect x='10' y='130' width='55' height='55'/%3E%3Crect x='15' y='135' width='45' height='45'/%3E%3Crect x='20' y='140' width='35' height='35'/%3E%3Crect x='25' y='145' width='25' height='25'/%3E%3Crect x='30' y='150' width='15' height='15'/%3E%3Crect x='35' y='155' width='5' height='5'/%3E%3Crect x='200' y='120' width='75' height='75'/%3E%3Crect x='40' y='200' width='75' height='75'/%3E%3Crect x='80' y='80' width='75' height='75'/%3E%3Crect x='85' y='85' width='65' height='65'/%3E%3Crect x='90' y='90' width='55' height='55'/%3E%3Crect x='95' y='95' width='45' height='45'/%3E%3Crect x='100' y='100' width='35' height='35'/%3E%3Crect x='105' y='105' width='25' height='25'/%3E%3Crect x='110' y='110' width='15' height='15'/%3E%3Crect x='115' y='115' width='5' height='5'/%3E%3Crect x='80' y='160' width='35' height='35'/%3E%3Crect x='85' y='165' width='25' height='25'/%3E%3Crect x='90' y='170' width='15' height='15'/%3E%3Crect x='95' y='175' width='5' height='5'/%3E%3Crect x='120' y='160' width='75' height='75'/%3E%3Crect x='125' y='165' width='65' height='65'/%3E%3Crect x='130' y='170' width='55' height='55'/%3E%3Crect x='135' y='175' width='45' height='45'/%3E%3Crect x='140' y='180' width='35' height='35'/%3E%3Crect x='145' y='185' width='25' height='25'/%3E%3Crect x='150' y='190' width='15' height='15'/%3E%3Crect x='155' y='195' width='5' height='5'/%3E%3Crect x='160' y='40' width='75' height='75'/%3E%3Crect x='165' y='45' width='65' height='65'/%3E%3Crect x='170' y='50' width='55' height='55'/%3E%3Crect x='175' y='55' width='45' height='45'/%3E%3Crect x='180' y='60' width='35' height='35'/%3E%3Crect x='185' y='65' width='25' height='25'/%3E%3Crect x='190' y='70' width='15' height='15'/%3E%3Crect x='195' y='75' width='5' height='5'/%3E%3Crect x='160' y='120' width='35' height='35'/%3E%3Crect x='165' y='125' width='25' height='25'/%3E%3Crect x='170' y='130' width='15' height='15'/%3E%3Crect x='175' y='135' width='5' height='5'/%3E%3Crect x='200' y='200' width='35' height='35'/%3E%3Crect x='200' width='35' height='35'/%3E%3Crect y='200' width='35' height='35'/%3E%3C/g%3E%3C/svg%3E");
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23555555' stroke-width='0.7' stroke-opacity='0.2'%3E%3Crect x='-40' y='40' width='75' height='75'/%3E%3Crect x='-35' y='45' width='65' height='65'/%3E%3Crect x='-30' y='50' width='55' height='55'/%3E%3Crect x='-25' y='55' width='45' height='45'/%3E%3Crect x='-20' y='60' width='35' height='35'/%3E%3Crect x='-15' y='65' width='25' height='25'/%3E%3Crect x='-10' y='70' width='15' height='15'/%3E%3Crect x='-5' y='75' width='5' height='5'/%3E%3Crect width='35' height='35'/%3E%3Crect x='5' y='5' width='25' height='25'/%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='15' y='15' width='5' height='5'/%3E%3Crect x='40' width='75' height='75'/%3E%3Crect x='45' y='5' width='65' height='65'/%3E%3Crect x='50' y='10' width='55' height='55'/%3E%3Crect x='55' y='15' width='45' height='45'/%3E%3Crect x='60' y='20' width='35' height='35'/%3E%3Crect x='65' y='25' width='25' height='25'/%3E%3Crect x='70' y='30' width='15' height='15'/%3E%3Crect x='75' y='35' width='5' height='5'/%3E%3Crect x='40' y='80' width='35' height='35'/%3E%3Crect x='45' y='85' width='25' height='25'/%3E%3Crect x='50' y='90' width='15' height='15'/%3E%3Crect x='55' y='95' width='5' height='5'/%3E%3Crect x='120' y='-40' width='75' height='75'/%3E%3Crect x='125' y='-35' width='65' height='65'/%3E%3Crect x='130' y='-30' width='55' height='55'/%3E%3Crect x='135' y='-25' width='45' height='45'/%3E%3Crect x='140' y='-20' width='35' height='35'/%3E%3Crect x='145' y='-15' width='25' height='25'/%3E%3Crect x='150' y='-10' width='15' height='15'/%3E%3Crect x='155' y='-5' width='5' height='5'/%3E%3Crect x='120' y='40' width='35' height='35'/%3E%3Crect x='125' y='45' width='25' height='25'/%3E%3Crect x='130' y='50' width='15' height='15'/%3E%3Crect x='135' y='55' width='5' height='5'/%3E%3Crect y='120' width='75' height='75'/%3E%3Crect x='5' y='125' width='65' height='65'/%3E%3Crect x='10' y='130' width='55' height='55'/%3E%3Crect x='15' y='135' width='45' height='45'/%3E%3Crect x='20' y='140' width='35' height='35'/%3E%3Crect x='25' y='145' width='25' height='25'/%3E%3Crect x='30' y='150' width='15' height='15'/%3E%3Crect x='35' y='155' width='5' height='5'/%3E%3Crect x='200' y='120' width='75' height='75'/%3E%3Crect x='40' y='200' width='75' height='75'/%3E%3Crect x='80' y='80' width='75' height='75'/%3E%3Crect x='85' y='85' width='65' height='65'/%3E%3Crect x='90' y='90' width='55' height='55'/%3E%3Crect x='95' y='95' width='45' height='45'/%3E%3Crect x='100' y='100' width='35' height='35'/%3E%3Crect x='105' y='105' width='25' height='25'/%3E%3Crect x='110' y='110' width='15' height='15'/%3E%3Crect x='115' y='115' width='5' height='5'/%3E%3Crect x='80' y='160' width='35' height='35'/%3E%3Crect x='85' y='165' width='25' height='25'/%3E%3Crect x='90' y='170' width='15' height='15'/%3E%3Crect x='95' y='175' width='5' height='5'/%3E%3Crect x='120' y='160' width='75' height='75'/%3E%3Crect x='125' y='165' width='65' height='65'/%3E%3Crect x='130' y='170' width='55' height='55'/%3E%3Crect x='135' y='175' width='45' height='45'/%3E%3Crect x='140' y='180' width='35' height='35'/%3E%3Crect x='145' y='185' width='25' height='25'/%3E%3Crect x='150' y='190' width='15' height='15'/%3E%3Crect x='155' y='195' width='5' height='5'/%3E%3Crect x='160' y='40' width='75' height='75'/%3E%3Crect x='165' y='45' width='65' height='65'/%3E%3Crect x='170' y='50' width='55' height='55'/%3E%3Crect x='175' y='55' width='45' height='45'/%3E%3Crect x='180' y='60' width='35' height='35'/%3E%3Crect x='185' y='65' width='25' height='25'/%3E%3Crect x='190' y='70' width='15' height='15'/%3E%3Crect x='195' y='75' width='5' height='5'/%3E%3Crect x='160' y='120' width='35' height='35'/%3E%3Crect x='165' y='125' width='25' height='25'/%3E%3Crect x='170' y='130' width='15' height='15'/%3E%3Crect x='175' y='135' width='5' height='5'/%3E%3Crect x='200' y='200' width='35' height='35'/%3E%3Crect x='200' width='35' height='35'/%3E%3Crect y='200' width='35' height='35'/%3E%3C/g%3E%3C/svg%3E"); */
+}
+#landing .left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+#landing .right {
+  width: 50%;
+}
+#landing .left h1 {
+  /* text-shadow: 0 0 4px #e6881c, 0 0 6px #e6881c, 0 0 10px #e6881c,
+    0 0 10px #e6881c, 0 0 20px #e6881c, 0 0 22px #e6881c, 0 0 20px #e6881c,
+    0 0 20px #e6881c; */
+  font-size: 3.8rem;
+  /* font-weight: 800; */
+  margin-bottom: 0px;
+  margin-top: 0;
+}
+#landing .left h3 {
+  font-size: 1.2rem;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+#landing .left p {
+  color: #757575;
+  text-align: justify;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/* .title4 {
+	/* text-shadow: 2px 2px #d8d8d8; */
+
+#aboutus {
+  margin-top: 100px;
+  color: white;
+}
+
+.tagline {
+  font-style: oblique;
+  margin-bottom: 80px;
+}
+
+#landing .calendar {
+  background-color: #292c36;
+  width: 62%;
+  border-radius: 8px;
+  padding: 10px 15px;
+  padding-bottom: 25px;
+  margin-bottom: 60px;
+}
+#landing .calendar .top span {
+  display: inline-block;
+}
+#landing .calendar .top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid #929398;
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+}
+#landing .calendar .top > span {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+#landing .calendar .top > div > span {
+  color: #929398 !important;
+}
+#landing .calendar .middle span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+#landing .calendar .middle > span:first-of-type {
+  background-color: #405167;
+  border-radius: 25px;
+  padding: 10px 15px;
+  padding-right: 5px;
+  margin-right: 8px;
+}
+#landing .calendar .middle > span > span:nth-child(3),
+#landing .calendar .middle > span > span:nth-child(4),
+#landing .calendar .middle > span > span:nth-child(5) {
+  background-color: #71a0ce;
+  border-radius: 100%;
+  padding: 8px;
+}
+#landing .calendar .bottom {
+  color: #5d5e60;
+  font-size: 0.6rem;
+  font-weight: 600;
+  margin-top: 20px;
+}
+#landing .right.landing_vector {
+  transform: scale(1.2);
+}
+#landing .buttons {
+  display: flex;
+}
+#landing .buttons .devfolio_apply_button {
+  height: 44px;
+  width: 312px;
+}
+#landing .buttons .discord_button {
+  width: 55px;
+  background-color: #fff;
+  height: 44px;
+  margin-left: 15px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+}
+#landing .buttons .discord_button_mobile {
+  width: 35px;
+  background-color: #fff;
+  height: 44px;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  cursor: pointer;
+  width: 312px;
+  display: none;
+}
+#landing .buttons .discord_button_mobile img {
+  width: 80%;
+}
+#landing .buttons .discord_button_mobile img {
+  transform: scale(0.6);
+  /* filter: opacity(0.85); */
+}
+#landing .buttons .discord_button img {
+  transform: scale(1.6);
+  filter: opacity(0.85);
+}
+/* style="height: 44px; width: 312px" */
+#landing .left .calendar .middle {
+  display: flex;
+  align-items: center;
+}
+
+/* -----------------------------Ticker Section ------------------------*/
+#ticker {
+  background-color: #21272e40;
+  height: 15vh;
+  position: absolute;
+  bottom: 0;
+}
+#ticker .ticker_wrap {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  animation: ticker 20s linear infinite;
+}
+#ticker img {
+  display: inline-block;
+  margin-right: 100px;
+  width: 12%;
+}
+#ticker img.jetbrains {
+  width: 5%;
+}
+
+/* ---------------------------- About Us section ------------------------------*/
+#about_us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
+#about_us h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  margin-left: 0;
+  text-align: center;
+  color: #396ed1;
+}
+#about_us p {
+  margin-top: 5px;
+  margin-bottom: 50px;
+  padding-left: 150px;
+  padding-right: 150px;
+  font-size: large;
+  line-height: 200%;
+  text-align: center;
+}
+.about_high {
+  color: #7ad140;
+}
+.abouttitle {
+  font-size: 120%;
+}
+
+/* --------------------------------------- topics section --------------------------------------- */
+#topics {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  margin-top: 50px;
+  /* background-color: #000000;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='250' height='30' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='10' %3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E"); */
+}
+#topics h1 {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  margin-left: 0;
+  text-align: center;
+  color: #396ed1;
+}
+#topics > p {
+  /* width: 65%; */
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 50px;
+  padding-left: 10px;
+  color: #406ff0;
+  font-size: 100%;
+  font-family: poppins;
+}
+
+#topics #topics_wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#topics #topics_wrapper > div {
+  width: 24%;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 20px 20px 0 10px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+
+/* ------------------------------ Join_us Section --------------------------*/
+#join_us {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 40px;
+  background-color: #060606;
+  background-attachment: fixed;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='400' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23656565' stroke-width='1' stroke-opacity='0.27'%3E%3Crect x='-40' y='40' width='75' height='75'/%3E%3Crect x='-35' y='45' width='65' height='65'/%3E%3Crect x='-30' y='50' width='55' height='55'/%3E%3Crect x='-25' y='55' width='45' height='45'/%3E%3Crect x='-20' y='60' width='35' height='35'/%3E%3Crect x='-15' y='65' width='25' height='25'/%3E%3Crect x='-10' y='70' width='15' height='15'/%3E%3Crect x='-5' y='75' width='5' height='5'/%3E%3Crect width='35' height='35'/%3E%3Crect x='5' y='5' width='25' height='25'/%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='15' y='15' width='5' height='5'/%3E%3Crect x='40' width='75' height='75'/%3E%3Crect x='45' y='5' width='65' height='65'/%3E%3Crect x='50' y='10' width='55' height='55'/%3E%3Crect x='55' y='15' width='45' height='45'/%3E%3Crect x='60' y='20' width='35' height='35'/%3E%3Crect x='65' y='25' width='25' height='25'/%3E%3Crect x='70' y='30' width='15' height='15'/%3E%3Crect x='75' y='35' width='5' height='5'/%3E%3Crect x='40' y='80' width='35' height='35'/%3E%3Crect x='45' y='85' width='25' height='25'/%3E%3Crect x='50' y='90' width='15' height='15'/%3E%3Crect x='55' y='95' width='5' height='5'/%3E%3Crect x='120' y='-40' width='75' height='75'/%3E%3Crect x='125' y='-35' width='65' height='65'/%3E%3Crect x='130' y='-30' width='55' height='55'/%3E%3Crect x='135' y='-25' width='45' height='45'/%3E%3Crect x='140' y='-20' width='35' height='35'/%3E%3Crect x='145' y='-15' width='25' height='25'/%3E%3Crect x='150' y='-10' width='15' height='15'/%3E%3Crect x='155' y='-5' width='5' height='5'/%3E%3Crect x='120' y='40' width='35' height='35'/%3E%3Crect x='125' y='45' width='25' height='25'/%3E%3Crect x='130' y='50' width='15' height='15'/%3E%3Crect x='135' y='55' width='5' height='5'/%3E%3Crect y='120' width='75' height='75'/%3E%3Crect x='5' y='125' width='65' height='65'/%3E%3Crect x='10' y='130' width='55' height='55'/%3E%3Crect x='15' y='135' width='45' height='45'/%3E%3Crect x='20' y='140' width='35' height='35'/%3E%3Crect x='25' y='145' width='25' height='25'/%3E%3Crect x='30' y='150' width='15' height='15'/%3E%3Crect x='35' y='155' width='5' height='5'/%3E%3Crect x='200' y='120' width='75' height='75'/%3E%3Crect x='40' y='200' width='75' height='75'/%3E%3Crect x='80' y='80' width='75' height='75'/%3E%3Crect x='85' y='85' width='65' height='65'/%3E%3Crect x='90' y='90' width='55' height='55'/%3E%3Crect x='95' y='95' width='45' height='45'/%3E%3Crect x='100' y='100' width='35' height='35'/%3E%3Crect x='105' y='105' width='25' height='25'/%3E%3Crect x='110' y='110' width='15' height='15'/%3E%3Crect x='115' y='115' width='5' height='5'/%3E%3Crect x='80' y='160' width='35' height='35'/%3E%3Crect x='85' y='165' width='25' height='25'/%3E%3Crect x='90' y='170' width='15' height='15'/%3E%3Crect x='95' y='175' width='5' height='5'/%3E%3Crect x='120' y='160' width='75' height='75'/%3E%3Crect x='125' y='165' width='65' height='65'/%3E%3Crect x='130' y='170' width='55' height='55'/%3E%3Crect x='135' y='175' width='45' height='45'/%3E%3Crect x='140' y='180' width='35' height='35'/%3E%3Crect x='145' y='185' width='25' height='25'/%3E%3Crect x='150' y='190' width='15' height='15'/%3E%3Crect x='155' y='195' width='5' height='5'/%3E%3Crect x='160' y='40' width='75' height='75'/%3E%3Crect x='165' y='45' width='65' height='65'/%3E%3Crect x='170' y='50' width='55' height='55'/%3E%3Crect x='175' y='55' width='45' height='45'/%3E%3Crect x='180' y='60' width='35' height='35'/%3E%3Crect x='185' y='65' width='25' height='25'/%3E%3Crect x='190' y='70' width='15' height='15'/%3E%3Crect x='195' y='75' width='5' height='5'/%3E%3Crect x='160' y='120' width='35' height='35'/%3E%3Crect x='165' y='125' width='25' height='25'/%3E%3Crect x='170' y='130' width='15' height='15'/%3E%3Crect x='175' y='135' width='5' height='5'/%3E%3Crect x='200' y='200' width='35' height='35'/%3E%3Crect x='200' width='35' height='35'/%3E%3Crect y='200' width='35' height='35'/%3E%3C/g%3E%3C/svg%3E");
+  background-color: #121217;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120' viewBox='0 0 120 120'%3E%3Cpolygon fill='%23000' fill-opacity='0.57' points='120 0 120 60 90 30 60 0 0 0 0 0 60 60 0 120 60 120 90 90 120 60 120 0'/%3E%3C/svg%3E");
+}
+#join_us h1 {
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-left: 0;
+  text-align: center;
+}
+#join_us .img_vector {
+  width: 32%;
+}
+#join_us .faq-section,
+#join_us .register {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  border-radius: 10px;
+  background-color: #17171d;
+}
+#join_us .faq-section h1,
+#join_us .register h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+#join_us .faq-section p,
+#join_us .register p {
+  color: #fff;
+}
+#join_us .faq-section .img,
+#join_us .register .img {
+  width: 50%;
+}
+#join_us .btn {
+  cursor: pointer;
+  width: 90%;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 25px;
+  background-color: #fff;
+  color: #17171d;
+  text-align: center;
+  font-size: 1.2;
+  font-weight: 600;
+}
+/* ------------------------------- Keyframes Section ------------------------- */
+@keyframes ticker {
+  0% {
+    transform: translate(150vw, 0px);
+  }
+  100% {
+    transform: translate(-150vw, 0px);
+  }
+}
+
+/* ------------------------------- Media Queries ----------------------------- */
+@media (max-width: 1250px) {
+  section {
+    padding: 0px 80px 0 80px;
+  }
+  /* Navbar Section */
+  #nav_bar {
+    padding: 10px 40px;
+    padding-right: 20;
+  }
+  #nav_bar .nav_links {
+    width: 80%;
+  }
+  #nav_bar .tcr_logo {
+    width: 12%;
+  }
+  #nav_bar .gdsc_logo {
+    width: 30%;
+  }
+  /* Landing Section */
+  #landing .calendar {
+    width: 64%;
+  }
+  /* topics Section */
+  #topics #topics_wrapper {
+    justify-content: space-between;
+  }
+  #topics #topics_wrapper > div {
+    width: 32%;
+  }
+  /* Join Us Section */
+  #join_us .img_vector {
+    display: none;
+  }
+  #join_us .faq-section,
+  #join_us .register {
+    width: 40%;
+  }
+}
+@media (max-width: 1080px) {
+  section {
+    padding: 0px 20px 0 20px;
+  }
+  /* Navbar Section */
+  #nav_bar {
+    padding: 10px 20px;
+    padding-right: 20;
+  }
+  #nav_bar .tcr_logo {
+    width: 23%;
+  }
+  /* Landing Section */
+  #landing .calendar {
+    width: 80%;
+  }
+  /* Ticker Section */
+  @keyframes ticker {
+    0% {
+      transform: translate(250vw, 0px);
+    }
+    100% {
+      transform: translate(-280vw, 0px);
+    }
+  }
+  #ticker .ticker_wrap {
+    animation: ticker 15s linear infinite;
+  }
+  #ticker img {
+    width: 25%;
+  }
+  #ticker img.jetbrains {
+    width: 10%;
+  }
+}
+@media (max-width: 850px) {
+  /* hiccup in the nav from 850 to 786 */
+  /* Navbar Section */
+  #nav_bar {
+    display: none;
+  }
+  #nav_bar_mobile {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+  .hamburger-close .ham-box {
+    display: inline-block;
+    position: relative;
+    width: 30px;
+    height: 24px;
+  }
+  .hamburger-close .ham-box-inner {
+    position: absolute;
+    top: 50%;
+    right: 0px;
+    width: 30px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #ee6c4d;
+    transition: transform 0.22s cubic-bezier(0.215, 0.61, 0.355, 1) 0.12s;
+    transform: rotate(225deg);
+  }
+  .hamburger-close .ham-box-inner::before {
+    width: 100%;
+    top: 0px;
+    opacity: 0;
+  }
+  .hamburger-close .ham-box-inner::after {
+    width: 100%;
+    bottom: 0px;
+    transform: rotate(90deg);
+  }
+  .hamburger-close .ham-box-inner::before,
+  .hamburger-close .ham-box-inner::after {
+    content: "";
+    display: block;
+    position: absolute;
+    left: auto;
+    right: 0px;
+    width: 30px;
+    height: 2px;
+    border-radius: 4px;
+    background-color: #ee6c4d;
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: transform;
+    top: 0;
+  }
+  /* Aside Section */
+  aside.menubar {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 50px 10px;
+    width: min(75vw, 400px);
+    height: 105vh;
+    outline: 0px;
+    background-color: #0b0b1b;
+    box-shadow: -10px 0px 30px -15px rgba(99, 99, 127, 0.5);
+    z-index: 9;
+    transform: translateX(100vw);
+    visibility: hidden;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .hamburger-close {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    margin-right: -15px;
+    padding: 15px;
+    border: 0px;
+    background-color: transparent;
+    color: inherit;
+    text-transform: none;
+    transition-timing-function: linear;
+    transition-duration: 0.15s;
+    transition-property: opacity, filter;
+  }
+  aside.menubar-open {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    padding: 50px 10px;
+    width: min(100vw, 400px);
+    height: 100vh;
+    outline: 0px;
+    background-color: #0b0b1b;
+    box-shadow: -10px 0px 30px -15px rgba(99, 99, 127, 0.5);
+    z-index: 9;
+    transform: translateX(0vw);
+    visibility: visible;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  }
+  .d_none {
+    display: none;
+  }
+  aside.menubar-open ul a:hover,
+  aside.menubar-open ul a:active,
+  aside.menubar-open ul a:focus {
+    color: #ee6c4d;
+    outline: 0px;
+  }
+  aside ul {
+    list-style-type: none;
+    font-size: 30px;
+    line-height: 50px;
+  }
+  aside.menubar nav {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    color: #6d6d6d;
+    text-align: center;
+  }
+  aside.menubar ol {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    width: 100%;
+  }
+  aside.menubar ol li {
+    position: relative;
+    margin: 0px auto 20px;
+    counter-increment: item 1;
+    font-size: clamp(14px, 4vw, 18px);
+  }
+  aside.menubar ol li::before {
+    content: "0" counter(item) ".";
+    display: block;
+    margin-bottom: 5px;
+    color: #6d6d6d;
+    font-size: 14px;
+  }
+  aside.menubar ol a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 100%;
+    padding: 3px 20px 20px;
+  }
+  aside.menubar .resume-link {
+    color: #ee6c4d;
+    background-color: transparent;
+    border: 1px solid #6d6d6d;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 18px 50px;
+    margin: 10% auto 0px;
+    width: max-content;
+  }
+  aside.menubar-open nav {
+    display: flex;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+    color: #6d6d6d;
+    text-align: center;
+  }
+  aside.menubar-open ol {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+    width: 100%;
+  }
+  aside.menubar-open ol li {
+    position: relative;
+    margin: 0px auto 20px;
+    counter-increment: item 1;
+    font-size: clamp(14px, 4vw, 18px);
+  }
+  aside.menubar-open ol li::before {
+    content: "0" counter(item) ".";
+    display: block;
+    margin-bottom: 5px;
+    color: #ee6c4d;
+    font-size: 14px;
+  }
+  aside.menubar-open ol a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+    width: 100%;
+    padding: 3px 20px 20px;
+  }
+  aside.menubar .gdsc_logo {
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+    height: 50px;
+  }
+
+  section {
+    padding: 16px 10px 0 10px;
+  }
+  /* Ticker Section */
+  @keyframes ticker {
+    0% {
+      transform: translate(300vw, 0px);
+    }
+    100% {
+      transform: translate(-320vw, 0px);
+    }
+  }
+  /* Landing Section */
+  #landing {
+    width: 100%;
+  }
+  #landing .right {
+    width: 40%;
+  }
+  #landing .left {
+    width: 60%;
+  }
+  /* topics Section */
+  #topics #topics_wrapper > div {
+    width: 48%;
+  }
+  #topics > p {
+    width: 80%;
+  }
+}
+
+@media (max-width: 740px) {
+  #about_us p {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Landing Section */
+  #landing {
+    padding-top: 0;
+    min-height: 70vh;
+  }
+  #landing .right {
+    width: 0;
+    display: none;
+  }
+  #landing .left {
+    width: 100%;
+  }
+  #landing .left h1 {
+    font-size: 2.2rem;
+  }
+  #landing .left h3 {
+    font-size: 0.8rem;
+  }
+  #landing .left .calendar {
+    padding-bottom: 5px;
+  }
+  #landing .left .calendar .bottom {
+    margin-top: 10px;
+  }
+  #landing .left .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  #landing .left .buttons iframe {
+    margin-bottom: 25px !important;
+  }
+  #landing .left .buttons .discord_button {
+    display: none;
+  }
+  #landing .left .buttons .discord_button_mobile {
+    width: 100%;
+    display: flex;
+  }
+  /* Ticker Section */
+  #ticker {
+    height: 12vh;
+  }
+  #ticker img {
+    width: 12%;
+  }
+
+  #ticker img.jetbrains {
+    width: 5%;
+  }
+  @keyframes ticker {
+    0% {
+      transform: translate(280vw, 0px);
+    }
+    100% {
+      transform: translate(-310vw, 0px);
+    }
+  }
+  #ticker .ticker_wrap {
+    animation: ticker 15s linear infinite;
+  }
+  /* topics Section */
+  #topics > p {
+    width: 100%;
+  }
+  #topics #topics_wrapper {
+    justify-content: center;
+  }
+  #topics #topics_wrapper > div {
+    width: 90%;
+  }
+  /* Join Us */
+  #join_us .faq-section {
+    margin-bottom: 30px;
+  }
+  #join_us .register {
+    margin-bottom: 50px;
+  }
+  #join_us .faq-section,
+  #join_us .register {
+    width: 80%;
+  }
+}
+@media (max-width: 480px) {
+  /* #content {
+		min-height: 110vh;
+	} */
+  /* Landing Section */
+  #landing {
+    padding-top: 0;
+  }
+  #landing .left h1 {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  #landing .left h3 {
+    font-size: 0.6rem;
+  }
+  #landing .left p {
+    font-size: 14px;
+  }
+  #landing .left .calendar {
+    width: 100%;
+  }
+  #landing .left .buttons iframe {
+    margin-bottom: 10px !important;
+  }
+
+  /* Ticker Section */
+  /* Ticker Section */
+  @keyframes ticker {
+    0% {
+      transform: translate(300vw, 0px);
+    }
+    100% {
+      transform: translate(-480vw, 0px);
+    }
+  }
+  #ticker .ticker_wrap {
+    animation: ticker 15s linear infinite;
+  }
+  /* #ticker img {
+		width: 50%;
+	} */
+  /* topics Section */
+  #topics {
+    margin-top: 10px;
+  }
+  #topics h1 {
+    margin-bottom: 10px;
+  }
+  #topics > p {
+    font-size: 0.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  #topics #topics_wrapper > div {
+    width: 100%;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  #topics #topics_wrapper > div > div:first-child {
+    width: 100%;
+  }
+  #topics #topics_wrapper > div h1 {
+    font-size: 1.5rem;
+    margin-bottom: 10;
+  }
+  #topics #topics_wrapper > div p {
+    font-size: 0.8rem;
+  }
+  /* Join Us */
+  #join_us .faq-section,
+  #join_us .register {
+    width: 100%;
+  }
+  #join_us .faq-section .btn,
+  #join_us .register .btn {
+    width: 80%;
+  }
+}
+@media (max-width: 320px) {
+  /* Landing Section */
+  #landing {
+    padding-top: 8px;
+  }
+  #landing .left .calendar span {
+    font-size: 0.8rem;
+  }
+  #landing .left .buttons iframe,
+  #landing .left .buttons .discord_button_mobile {
+    width: 150px !important;
+  }
+  #landing .left .buttons iframe {
+    margin-bottom: 10px !important;
+  }
+}
+
+
+/* --------------------------------------- speakers section --------------------------------------- */
+
+#speakers {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 40px;
+}
+#speakers > h1 {
+  font-size: 3.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+  margin-left: 0;
+  text-align: center;
+  color: #406ff0;
+}
+
+#speakers #speakers_wrapper {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+#speakers #speakers_wrapper > div {
+  width: 45%;
+  margin-bottom: 45px;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 4px rgb(19, 17, 17);
+  background: linear-gradient(rgb(46, 45, 45), rgb(36, 36, 36));
+}
+
+#speakers #speakers_wrapper > div > div:first-child {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#speakers #speakers_wrapper .img {
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  height: auto;
+}
+#speakers #speakers_wrapper img {
+  filter: blur(25px);
+  position: relative;
+}
+#speakers #speakers_wrapper > div > div:last-child {
+  width: 100%;
+  margin-left: 15px;
+  margin-right: 15px;
+  justify-items: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+#speakers #speakers_wrapper > div h1 {
+  font-weight: 600;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+#speakers #speakers_wrapper > div p {
+  color: rgb(216, 214, 214);
+  font-size: 0.8rem;
+}
+
+.eventcr_social_icons {
+  color: #747477;
+  margin-top: 20px;
+}
+.eventcr_social_icons i {
+  font-size: 25px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+#speakers #speakers_wrapper > div:hover {
+  box-shadow: 3px 7px 8px 3px #615755;
+  transform: scale(1.1);
+  transition: all ease-in-out 0.3s;
+}
+
+@media screen and (max-width: 720px) {
+  #speakers #speakers_wrapper > div {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  #speakers #speakers_wrapper > div {
+    flex-direction: column;
+    width: 65%;
+    margin-bottom: 20px;
+    height: auto;
+    box-sizing: border-box;
+  }
+
+  #speakers #speakers_wrapper > div > div:first-child {
+    width: 100%;
+  }
+
+  #speakers #speakers_wrapper > div > div:last-child {
+    width: 90%;
+    margin: auto;
+  }
+
+  #speakers #speakers_wrapper > div h1 {
+    font-size: 1.3rem;
+    margin-bottom: 0;
+  }
+  #speakers #speakers_wrapper > div p {
+    font-size: 0.6rem;
+  }
+}
+
+#countdown {
+  text-align: center;
+}
+#countdown div {
+  margin: 20px;
+  display: inline-block;
+  padding: 25px;
+  border-radius: 10px;
+  min-width: 120px;
+  background-color: #1B5B63;
+  color: #fff;
+  font-size: 48px;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+}
+#countdown div span {
+  display: block;
+  font-size: 14px;
+  font-weight: 400;
+}
+.bg-img {
+  border-radius: 4px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+.bg-img .overlay_dark {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.pt70 {
+  padding-top: 70px !important;
+}
+.pb70 {
+  padding-bottom: 70px !important;
+}
