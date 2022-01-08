@@ -64,7 +64,7 @@ document.getElementById('faq-button').addEventListener('click', () => {
 		left.removeChild(left.lastChild);
 		left.insertAdjacentHTML('beforeEnd', message1);
 		left.insertAdjacentHTML('beforeEnd', accordian);
-	}, 1500);
+	}, 2500);
 });
 document.getElementById('close').addEventListener('click', () => {
 	document.querySelector('body').style.overflowY = 'unset';
@@ -76,7 +76,7 @@ document.getElementById('close').addEventListener('click', () => {
 function answerQuery(e) {
 	let index = e.target.getAttribute('data-index');
 	let left = document.getElementsByClassName('faq-left')[0];
-	let delay = messageTemplate(index).length*25;
+	let delay = messageTemplate(index).length*35;
 	left.insertAdjacentHTML('beforeEnd', waitMessage);
 	left.scrollTop = left.scrollHeight;
 	setTimeout(() => {
