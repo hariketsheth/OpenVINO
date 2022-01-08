@@ -654,7 +654,6 @@ aside.menubar {
 }
 #join_us .btn {
   cursor: pointer;
-  width: 90%;
   padding: 20px;
   margin-top: 20px;
   border-radius: 25px;
@@ -1176,7 +1175,8 @@ aside.menubar {
   /* Join Us */
   #join_us .faq-section,
   #join_us .register {
-    width: 100%;
+    
+    width: 300px;
   }
   #join_us .faq-section .btn,
   #join_us .register .btn {
@@ -1339,15 +1339,15 @@ aside.menubar {
   min-width: 120px;
   background-color: #1B5B63;
   color: #fff;
-  font-size: 48px;
+  font-size: 25px;
   font-weight: 600;
   text-align: center;
   line-height: 1.2;
 }
 #countdown div span {
   display: block;
-  font-size: 14px;
-  font-weight: 400;
+  font-size: 30px;
+  font-weight: bolder;
 }
 .bg-img {
   border-radius: 4px;
