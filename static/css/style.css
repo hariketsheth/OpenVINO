@@ -1259,7 +1259,7 @@ aside.menubar {
   height: auto;
 }
 #speakers #speakers_wrapper img {
-  filter: blur(25px);
+  filter: blur(0px);
   position: relative;
 }
 #speakers #speakers_wrapper > div > div:last-child {
