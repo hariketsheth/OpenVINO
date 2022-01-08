@@ -197,7 +197,7 @@ p {
   margin: auto;
   right: 0;
   position: absolute;
-  text-shadow: 0 0 10px rgba(50, 255, 50, 0.5), 0 0 5px rgba(100, 255, 100, 0.5);
+  text-shadow: 0 0 10px rgba(50, 122, 255, 0.5), 0 0 5px rgba(100, 123, 255, 0.5);
   top: 0;
 }
 
@@ -208,7 +208,7 @@ p {
 }
 
 .word .done {
-  color: #6f6;
+  color: rgb(102, 212, 255);
   transform: translateX(0) scale(1);
 }
 
