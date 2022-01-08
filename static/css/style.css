@@ -175,7 +175,7 @@ p {
 /* preloader style starts */
 
 .preloader {
-  background: radial-gradient(#222329, #000205);
+  background: radial-gradient(#1f264e, #002255);
   height: 100%;
   width: 100%;
   z-index: 100000;
