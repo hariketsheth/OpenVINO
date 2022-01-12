@@ -50,7 +50,9 @@ var x = setInterval(function() {
     
   // If the count down is over, write some text 
   if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "EXPIRED";
+  document.getElementById("days").innerHTML = 'J';
+  document.getElementById("hours").innerHTML = 'O';
+  document.getElementById("minutes").innerHTML = 'I';
+  document.getElementById("seconds").innerHTML = 'N';
   }
 }, 1000);
