@@ -6,7 +6,10 @@ const answers = [
 	"You should not see the time when learning something useful 🧐🤭. But it would be 1 Hour",
 	"You will get to learn about What is OpenVINO, and how to use OpenVINO Toolkit. This would be an informative event 😍",
 	"All attendees have to attempt the quiz (sent at the end of session), those scoring >=7 would be receiving an Intel Certified Certificate!!!	",
-	`We would be conducting it on Microsoft Teams. We will circulate the meeting link once registration is done.😎😎 `,
+	"We would be conducting it on Microsoft Teams. We will circulate the meeting link once registration is done.😎😎 ",
+	"Absolutely Nothing. We would be covering it right from the scratch. Grab on some coffee, 🍵 and join us at the event.",
+	"You can use the Microsoft Teams Chat ✍🏻 for sending in your doubts. Additionally, you can find social handles on the main page, Feel free to connect! 👩🏻‍💻 ",
+	"To answer all your general queries, we have formed a Whatsapp Group, 📲. After Registration, we had circulated, hence make sure to join using the same. ",
 ];
 
 
@@ -27,6 +30,9 @@ const accordian = `<div class="accordion">
             <div data-index='5' onclick="answerQuery(event)">Why should I Register, What can I expect?</div>
             <div data-index='6' onclick="answerQuery(event)">Are there any prizes/perks for this event?</div>
             <div data-index='7' onclick="answerQuery(event)">Which platform would be used for the event?</div>
+	    <div data-index='8' onclick="answerQuery(event)">What are the prerequisites for the event?</div>
+            <div data-index='9' onclick="answerQuery(event)">How can I get in touch with the speaker?</div>
+            <div data-index='10' onclick="answerQuery(event)">What if I have additional queries...?</div>
           </div>`;
 const message2 = `<div class="message-container">
             <div class="avatar">
