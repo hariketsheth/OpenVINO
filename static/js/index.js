@@ -44,10 +44,6 @@ var x = setInterval(function() {
     
   // Output the result in an element with id="demo"
   document.getElementById("days").innerHTML = days;
-  document.getElementById("dd").innerHTML = "Days";
-  document.getElementById("hd").innerHTML = "Hours";
-  document.getElementById("md").innerHTML = "Minutes";
-  document.getElementById("sd").innerHTML = "Seconds";
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds;
