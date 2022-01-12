@@ -9,7 +9,7 @@ const answers = [
 	"We would be conducting it on Microsoft Teams. We will circulate the meeting link once registration is done.😎😎 ",
 	"Absolutely Nothing. We would be covering it right from the scratch. Grab on some coffee, 🍵 and join us at the event.",
 	"You can use the Microsoft Teams Chat ✍🏻 for sending in your doubts. Additionally, you can find social handles on the main page, Feel free to connect! 👩🏻‍💻 ",
-	"To answer all your general queries, we have formed a Whatsapp Group, 📲. After Registration, we had circulated, hence make sure to join using the same. ",
+	"To answer all your general queries, we have formed a Whatsapp Group, 📲. After Registration, we had circulated the link, hence make sure to join the group. ",
 ];
 
 
